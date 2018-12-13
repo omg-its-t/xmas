@@ -1,0 +1,6 @@
+name: Theo's Custom Xmas Module
+description: Test module build to demonstrate routes and controllers
+type: module
+core: 8.x
+package: "Joliet Junior College Custom"
+version: 1.0

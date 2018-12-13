@@ -1,0 +1,6 @@
+xmas:
+  path: /xmas/greet/{name}
+  defaults:
+    _controller: Drupal\xmas\Controller\xmasController::greet
+  requirements:
+    _permission: 'access content'
