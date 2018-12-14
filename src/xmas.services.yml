@@ -1,0 +1,3 @@
+services:
+  xmas.hello_generator:
+    class: Drupal\xmas\XmasServices\HellowGenerator

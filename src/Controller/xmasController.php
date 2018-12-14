@@ -3,10 +3,15 @@
 namespace Drupal\xmas\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
+use Drupal\xmas\XmasServices\HelloGenerator;
 
 class xmasController{
 
     public function greet($name){
-        return new Response("Merry Christmas $name");
+
+        $helloGenerator = new HelloGenerator();
+        $hello = $helloGenerator->getHello($name);
+
+        return new Response($hello);
     }
 }
